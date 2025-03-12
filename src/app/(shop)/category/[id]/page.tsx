@@ -1,12 +1,17 @@
 import { ProductGrid } from "@/app/components/productGrid/productGrid";
 import Title from "@/app/ui/title/Title";
 import { initialData } from "@/seed/seed";
+import React from "react";
 
 const products = initialData.products;
 
-import React from "react";
+interface Props {
+  params: {
+    id: string;
+  };
+}
 
-export default function Page({ params }: Props) {
+function CategoryPage({ params }: Props) { // 1. Añade un nombre a la función
   const { id } = params;
   const productosFiltrados = products.filter(
     (product) => product.gender === id
@@ -24,3 +29,7 @@ export default function Page({ params }: Props) {
     </>
   );
 }
+
+CategoryPage.displayName = 'CategoryPage'; // 2. Añade displayName
+
+export default CategoryPage; // 3. Exporta la función con nombre

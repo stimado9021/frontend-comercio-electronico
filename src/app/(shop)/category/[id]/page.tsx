@@ -11,7 +11,7 @@ interface Props {
   };
 }
 
-function CategoryPage({ params }: Props) { // 1. Añade un nombre a la función
+async function CategoryPage({ params }: Props) { // 1. Añade un nombre a la función
   const { id } = params;
   const productosFiltrados = products.filter(
     (product) => product.gender === id

@@ -1,12 +1,11 @@
 import React from "react";
-import { initialData } from "@/seed/seed";
 import { clsx } from "clsx";
 interface Props {
   selectedSize: string;
   availaibleSize: string[];
 }
 export const SelectorSize = ({ selectedSize, availaibleSize }: Props) => {
-  //const Sizes = initialData.products.find(product => product.sizes);
+ 
 
   return (
     <div className="my-5">

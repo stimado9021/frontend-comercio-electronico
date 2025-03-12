@@ -90,7 +90,7 @@ export default function page() {
               <span className="mt-5 text-2xl text-right">120</span>          
             </div>
             <div className="mb-5 mt-5 w-full">
-              <p className="text-xs mb-3">Al hacer click en "Colocar Orden", aceptas nuestros <a href="#" className=" underline">Terminos y Condiciones de Uso </a> y <a href="#" className=" underline">Politicas de Privacidad </a> </p>
+              <p className="text-xs mb-3">Al hacer click en 'Colocar Orden', aceptas nuestros <a href="#" className=" underline">Terminos y Condiciones de Uso </a> y <a href="#" className=" underline">Politicas de Privacidad </a> </p>
               <Link 
               className="flex btn-primary justify-center"
               href={`/orders/123`}>

@@ -1,8 +1,8 @@
-import Footer from "@/app/components/footer";
+
 import { ProductGrid } from "@/app/components/productGrid/productGrid";
 import Title from "@/app/ui/title/Title";
 import { initialData } from "@/seed/seed";
-import { notFound } from "next/navigation";
+
 
 const products = initialData.products;
 

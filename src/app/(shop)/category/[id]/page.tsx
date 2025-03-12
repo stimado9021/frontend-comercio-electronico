@@ -6,7 +6,7 @@ const products = initialData.products;
 
 import React from "react";
 
-export default function ({ params }: Props) {
+export default function Page({ params }: Props) {
   const { id } = params;
   const productosFiltrados = products.filter(
     (product) => product.gender === id

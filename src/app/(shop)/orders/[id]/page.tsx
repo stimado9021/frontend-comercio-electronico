@@ -1,11 +1,11 @@
 import Title from "@/app/ui/title/Title";
 import { initialData } from "@/seed/seed";
-import Link from "next/link";
+
 import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
 import { IoCardOutline } from "react-icons/io5";
-import { redirect } from "next/navigation";
+
 
  interface Props{
   params:{
@@ -20,7 +20,7 @@ const productInCart = [
 ];
 
 export default function page({params}:Props) {
-  // redirect('/empty');
+ 
   const  id  = params;
   return (
     <div className="flex justify-center items-center mb-72 px-10 sm:p-0 w-screen">

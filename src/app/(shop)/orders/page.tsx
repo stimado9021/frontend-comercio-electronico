@@ -1,6 +1,5 @@
 import Title from "@/app/ui/title/Title";
 import Link from "next/link";
-import React from "react";
 import { IoCartOutline } from "react-icons/io5";
 
 export default function page() {

@@ -1,38 +1,23 @@
 import Title from "@/app/ui/title/Title";
-//import { initialData } from "@/seed/seed";
+import { initialData } from "@/seed/seed";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
 
 const productInCart = [
-  {
-    slug: "producto-1",
-    images: ["imagen1.jpg"],
-    title: "Producto 1",
-    price: 30,
-  },
-  {
-    slug: "producto-2",
-    images: ["imagen2.jpg"],
-    title: "Producto 2",
-    price: 20,
-  },
-  {
-    slug: "producto-3",
-    images: ["imagen3.jpg"],
-    title: "Producto 3",
-    price: 50,
-  },
+  initialData.products[0],
+  initialData.products[1],
+  initialData.products[2],
 ];
 
-export default function page() {
+export default function Page() {
   return (
     <div className="flex justify-center items-center mb-72 px-10 sm:p-0 w-screen">
       <div className="flex flex-col  ">
         <Title title="Verificar Orden" />
         <div className=" grid grid-cols-1 sm:grid-cols-2 gap-10 ">
-          <div className="flex flex-col mt-5  gap-5">
+          <div className="flex flex-col mt-5  gap-5 bg-white p-12 shadow-2xl">
             <span className="text-xl">Ajustar Elementos</span>
             <Link href={"/cart"} className=" underline mb-5">
               Editar Carrito
@@ -90,7 +75,7 @@ export default function page() {
               <span className="mt-5 text-2xl text-right">120</span>          
             </div>
             <div className="mb-5 mt-5 w-full">
-              <p className="text-xs mb-3">Al hacer click en 'Colocar Orden', aceptas nuestros <a href="#" className=" underline">Terminos y Condiciones de Uso </a> y <a href="#" className=" underline">Politicas de Privacidad </a> </p>
+              <p className="text-xs mb-3">Al hacer click en Colocar Orden, aceptas nuestros <a href="#" className=" underline">Terminos y Condiciones de Uso </a> y <a href="#" className=" underline">Politicas de Privacidad </a> </p>
               <Link 
               className="flex btn-primary justify-center"
               href={`/orders/123`}>

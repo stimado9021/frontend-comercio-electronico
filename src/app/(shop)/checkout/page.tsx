@@ -1,14 +1,29 @@
 import Title from "@/app/ui/title/Title";
-import { initialData } from "@/seed/seed";
+//import { initialData } from "@/seed/seed";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
 
 const productInCart = [
-  initialData.products[0],
-  initialData.products[1],
-  initialData.products[2],
+  {
+    slug: "producto-1",
+    images: ["imagen1.jpg"],
+    title: "Producto 1",
+    price: 30,
+  },
+  {
+    slug: "producto-2",
+    images: ["imagen2.jpg"],
+    title: "Producto 2",
+    price: 20,
+  },
+  {
+    slug: "producto-3",
+    images: ["imagen3.jpg"],
+    title: "Producto 3",
+    price: 50,
+  },
 ];
 
 export default function page() {
